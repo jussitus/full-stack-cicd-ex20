@@ -90,7 +90,7 @@ const App = () => {
   }
   return (
     <div>
-      <h2>Phonebook</h2>
+      <h2>Phonebook (version ex 11.20)</h2>
       <Notification message={notification} error={error} />
       <Filter handleSearchwordChange={handleSearchwordChange} />
       <h2>add new</h2>
