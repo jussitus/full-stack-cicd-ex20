@@ -24,6 +24,9 @@ jobs:
       - name: Run build
         run: npm run build:ui
 
+      - name: Sanity check
+        run: ls -l
+
       - name: Run Fly deploy
         if: ${{ github.event_name == 'push' && env.SKIP == 'false' }}
         run: flyctl deploy --remote-only
